@@ -59,3 +59,31 @@ export const HeroData = [
         bgColor: "#ac1a00",
     }
 ]
+
+export const NavbarMenu = [
+    {
+        id: 1,
+        title: "Home",
+        link: "#"
+    },
+    {
+        id: 2,
+        title: "Category",
+        link: "#"
+    },
+    {
+        id: 3,
+        title: "Blog",
+        link: "#"
+    },
+    {
+        id: 4,
+        title: "About",
+        link: "#"
+    },
+    {
+        id: 5,
+        title: "Contact",
+        link: "#"
+    }
+]

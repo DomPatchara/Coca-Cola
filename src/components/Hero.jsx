@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { HeroData } from '../assets/assets'
+import { HeroData } from '../../assets/assets'
 import { FaWhatsapp } from "react-icons/fa"
 import Navbar from './Navbar'
 import { motion, AnimatePresence, easeInOut} from 'framer-motion'
@@ -50,7 +50,7 @@ const Hero = () => {
 
             <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[605px] pb-12">
 
-                {/**------------------- Left Side----------------------- */}
+                {/**-------------------------------------------------- Left Side----------------------------------------------------------------- */}
 
                 {/** Data Info */}
                 <div className='flex flex-col justify-center py-14 md:py-0 xl:max-w-[500px] text-white order-2 md:order-1'>
@@ -137,7 +137,7 @@ const Hero = () => {
                     </div>
 
                 </div>
-                {/**----------------------- Right Side -----------------------------  */}
+                {/**--------------------------------------------------------- Right Side -----------------------------------------------------------  */}
                 {/** Hero Image */}
                 <div className='flex flex-col justify-center items-center relative order-1 md:order-2'>
                     <AnimatePresence mode='wait'>

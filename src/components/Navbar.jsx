@@ -1,37 +1,10 @@
 import React from 'react'
-import { assets } from '../assets/assets';
+import { assets } from '../../assets/assets';
+import { NavbarMenu } from '../../assets/assets';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUser } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
-
-const NavbarMenu = [
-    {
-        id: 1,
-        title: "Home",
-        link: "#"
-    },
-    {
-        id: 2,
-        title: "Category",
-        link: "#"
-    },
-    {
-        id: 3,
-        title: "Blog",
-        link: "#"
-    },
-    {
-        id: 4,
-        title: "About",
-        link: "#"
-    },
-    {
-        id: 5,
-        title: "Contact",
-        link: "#"
-    }
-]
 
 const Navbar = () => {
   return (

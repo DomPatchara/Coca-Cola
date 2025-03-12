@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroData } from '../assets/assets'
+import { HeroData } from '../../assets/assets'
 
 const Product = () => {
   return (
