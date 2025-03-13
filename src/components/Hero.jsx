@@ -3,33 +3,8 @@ import { useState } from 'react'
 import { HeroData } from '../../assets/assets'
 import { FaWhatsapp } from "react-icons/fa"
 import Navbar from './Navbar'
-import { motion, AnimatePresence, easeInOut} from 'framer-motion'
-
-const SlideRight = (delay) => {
-    return {
-        hidden: {
-            x: 100,
-            opacity: 0
-        },
-        show: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                delay: delay,
-                ease: easeInOut
-            }
-        },
-        exit: { // for fade out
-            opacity: 0,
-            transition: {
-                duration: 0.2,
-                ease: easeInOut
-            }
-        }
-    };
-}
-
+import { motion, AnimatePresence} from 'framer-motion'
+import { SlideRight } from '../animation'
 
 const Hero = () => {
     const [activeData, setActiveData] = useState(HeroData[0])
@@ -163,7 +138,7 @@ const Hero = () => {
                             initial={{ opacity:0 }}
                             animate={{ opacity:1 }}
                             transition={{ duration:0.4, delay:0.0, ease:"easeInOut" }}
-                            className='text-white/5 text-[300px] font-poppins font-extrabold absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                            className='text-white/5 text-[300px] font-poppins font-extrabold absolute top-0 left-[45%] -translate-x-1/2 -translate-y-1/2'
                         >
                             {activeData.modal}
                         </motion.div>

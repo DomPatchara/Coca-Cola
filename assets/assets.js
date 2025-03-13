@@ -37,6 +37,7 @@ export const HeroData = [
         price: "$40",
         modal: "Orange",
         bgColor: "#cf4f00",
+        delay: 0.5
     },
     {
         id:2,
@@ -47,6 +48,7 @@ export const HeroData = [
         price: "$100",
         modal: "Zero",
         bgColor: "#727272",
+        delay: 0.8
     },
     {
         id:1,
@@ -57,6 +59,7 @@ export const HeroData = [
         price: "$110",
         modal: "Cola",
         bgColor: "#ac1a00",
+        delay: 1.1
     }
 ]
 
@@ -87,3 +90,56 @@ export const NavbarMenu = [
         link: "#"
     }
 ]
+
+export const BlogsData = [
+    {
+        id:1,
+        title: "Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        desc: "Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        link: "#",
+        image: blog_1
+    },
+    {
+        id:2,
+        title: "Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        desc: "Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        link: "#",
+        image: blog_2
+    },
+    {
+        id:3,
+        title: "Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        desc: "Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        link: "#",
+        image: blog_3
+    },
+    {
+        id:4,
+        title: "Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        desc: "Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad. Lorem ispas asdasdpa dasdpaksdasd asdad.",
+        link: "#",
+        image: blog_4
+    },
+]
+
+export const faqData = [
+    {
+      question: "What is Fanta?",
+      answer:
+        "Fanta is a popular fruit-flavored carbonated soft drink created by The Coca-Cola Company.",
+    },
+    {
+      question: "What flavors does Fanta offer?",
+      answer:
+        "Fanta offers a variety of flavors including orange, grape, pineapple, and more!",
+    },
+    {
+      question: "Is Fanta gluten-free?",
+      answer:
+        "Yes, Fanta is gluten-free, making it suitable for those with gluten intolerance.",
+    },
+    {
+      question: "How many calories are in a can of Fanta?",
+      answer: "A 12 oz can of Fanta Orange contains about 160 calories.",
+    },
+  ];
