@@ -4,9 +4,13 @@ import { NavbarMenu } from '../../assets/assets';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUser } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { IoIosArrowBack } from "react-icons/io";
 
 
 const Navbar = () => {
+
+    const [visible, setVisible] = useState(false);
   return (
     <div className='text-white py-8'>
         <motion.div 
@@ -40,9 +44,27 @@ const Navbar = () => {
 
 
             {/** Hamburger Icon */}
-            <div className='md:hidden'>
-                <GiHamburgerMenu size={25}/>
+            <div className='md:hidden cursor-pointer z-40' onClick={() => setVisible(true)}>
+                <GiHamburgerMenu size={25} />
             </div>
+
+            {/**Sidebar menu for small screen*/}
+            <div className={`${visible ? 'w-[280px]' : 'w-0'} inset-shadow-[-50px_0px_300px] bg-amber-700 fixed top-0 right-0 bottom-0 z-100 overflow-hidden transition-all duration-300 md:hidden`}>
+                <div className='flex flex-col text-2xl mt-50 space-y-5 p-5'>
+                    <div className='flex gap-1 items-center cursor-pointer hover:scale-110 hover:translate-x-3' onClick={()=>setVisible(false)}>
+                        <IoIosArrowBack/>
+                        <p > Back </p>
+                    </div>
+                    <ul className='space-y-4'>
+                        <li className='hover:scale-110 hover:translate-x-3'><a href="#" onClick={()=>setVisible(false)} className=''>Home</a></li>
+                        <li className='hover:scale-110 hover:translate-x-3'><a href="#" onClick={()=>setVisible(false)}>Category</a></li>
+                        <li className='hover:scale-110 hover:translate-x-3'><a href="#" onClick={()=>setVisible(false)}>Blog</a></li>
+                        <li className='hover:scale-110 hover:translate-x-3'><a href="#" onClick={()=>setVisible(false)}>About</a></li>
+                        <li className='hover:scale-110 hover:translate-x-3'><a href="#" onClick={()=>setVisible(false)}>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </motion.div>
     </div>
   )
